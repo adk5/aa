@@ -1,0 +1,81 @@
+<AutoUpdate version="1.0">
+	<Updater version="1.0.0.8" url="http://issuecdn.baidupcs.com/issue/netdisk/pc-guanjia-update/5.4.10.2/updater_54102.cab" md5="56194E6E39C15C78A4CB9BC539A8813D" hint="">
+		<File name="Autoupdate.exe" dest="updater:\" type="bin" operation="add" md5="8CEFE38DBD18F2940699ADE88B55EE48"/>
+		<File name="AutoUpdateUtil.dll" dest="updater:\" type="bin" operation="add" md5="243C626A18C8F4FD34C916E15559F599"/>
+		<File name="config.ini" dest="updater:\" type="resource" operation="add" md5="ABE0392D19BAE73AE96E262E6CDBB8E2"/>
+		<File name="VersionInfo.xml" dest="updater:\" type="resource" operation="add" md5="8373CE7F736B0C9029ECBE0313FDCFA4"/>
+	</Updater>
+	<Module name="MainApp" text="Bug 修复" version="5.4.10.2" level="force">
+		<Upgrade versionLow="5.4.9.1" hint="Bug 修复" md5="55CEF7A46DB3B1D6A786B29031E264D7" url="http://issuecdn.baidupcs.com/issue/netdisk/pc-guanjia-update/5.4.10.2/upgrade_5491_54102.cab">
+			<File name="apputil.dll" dest="MainApp:\" type="bin" operation="patch" md5="830CC5DE3E339A8B687FC64CE5CF6D0A"/>
+			<File name="baiduyunguanjia.exe" dest="MainApp:\" type="bin" operation="patch" md5="F55E05773858CBC3695168F564781363"/>
+			<File name="basement.dll" dest="MainApp:\" type="bin" operation="patch" md5="F4CB5451012B68312A959EC976EB8374"/>
+			<File name="bugreport.exe" dest="MainApp:\" type="bin" operation="patch" md5="8C9F4E84222C69F46BDAEA0994A981A5"/>
+			<File name="bull120u.dll" dest="MainApp:\" type="bin" operation="patch" md5="ECEC3F02938560544EA8699B2BA0B814"/>
+			<File name="channelpcsdk.dll" dest="MainApp:\" type="bin" operation="patch" md5="EBDF61661B0BB91B44704E44B8921529"/>
+			<File name="helputility.exe" dest="MainApp:\" type="bin" operation="patch" md5="60ED8743441D5A7D4E9780F7775E06DC"/>
+			<File name="npyunwebdetect.dll" dest="MainApp:\" type="bin" operation="patch" md5="D7609F1259569585E4A8385F6A9FAAF2"/>
+			<File name="resource.db" dest="MainApp:\" type="resource" operation="patch" md5="58B89FCF7C90A260C5EE318CC20571B3"/>
+			<File name="serviceassistans.exe" dest="MainApp:\" type="bin" operation="patch" md5="7DB93B6C30E036BB8D078471286F033A"/>
+			<File name="skin\default.db" dest="MainApp:\skin\" type="resource" operation="patch" md5="89714CB7AD1076E8C13A7C82BF525503"/>
+			<File name="skin\duiengineskin.zip" dest="MainApp:\skin\" type="resource" operation="patch" md5="0E0F7F66FAC764590115252C0B0A386A"/>
+			<File name="uninst.exe" dest="MainApp:\" type="bin" operation="add" md5="EA56D958D7B2A25CD7D0FD86BE170823"/>
+			<File name="versioninfo" dest="MainApp:\" type="resource" operation="patch" md5="7905795F208565DCC5C198B5BB7569B3"/>
+			<File name="versioninfo2" dest="MainApp:\" type="resource" operation="patch" md5="D4289482B58EFFE510AF2816B82CCFCB"/>
+			<File name="ximage.dll" dest="MainApp:\" type="bin" operation="patch" md5="A5E649D68CCDA54C2F3C385B5B696EFE"/>
+			<File name="yundb.dll" dest="MainApp:\" type="bin" operation="patch" md5="A537B781C80576A231C31269A7134D12"/>
+			<File name="yundetectservice.exe" dest="MainApp:\" type="bin" operation="patch" md5="8B772F9BF99D6B235821FA8A11447915"/>
+			<File name="yunlogic.dll" dest="MainApp:\" type="bin" operation="patch" md5="5EC5828EA51537D8C98E00A9008CBE2E"/>
+			<File name="yunshellext.dll" dest="MainApp:\" type="bin" operation="patch" md5="71B0BB455D514A866380381F5621057A"/>
+			<File name="yunshellext64.dll" dest="MainApp:\" type="bin" operation="patch" md5="86871FE103C69DCBE5C4357AC6BB9D08"/>
+			<File name="yunutilityservice.exe" dest="MainApp:\" type="bin" operation="patch" md5="BDA6C3585D5CA03A5623A920D80A8C41"/>
+			<File name="yundetectservice.exe" dest="MainApp:\" type="restart" operation="exe"/>
+		</Upgrade>
+		<FullPackage hint="Bug 修复" md5="1CA10A6A1A3ED74095919C41CDB59F56" url="http://issuecdn.baidupcs.com/issue/netdisk/pc-guanjia-update/5.4.10.2/fullpackage_54102.cab">
+			<File name="appproperty.xml" dest="MainApp:\" type="resource" operation="add" md5="38A35EE4EF24896D4450825D30DA2D84"/>
+			<File name="apputil.dll" dest="MainApp:\" type="bin" operation="add" md5="830CC5DE3E339A8B687FC64CE5CF6D0A"/>
+			<File name="autobackup.ico" dest="MainApp:\" type="resource" operation="add" md5="CEA33E92DD2E8F1B4DBED22C25AC7570"/>
+			<File name="autodiagnose.dll" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="9CB22D68EAA5E2DA3738A9B06B72A451"/>
+			<File name="autodiagnoseupdate.exe" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="2529A3095F14B82A6507D7287D0202F6"/>
+			<File name="baiduyunguanjia.exe" dest="MainApp:\" type="bin" operation="add" md5="F55E05773858CBC3695168F564781363"/>
+			<File name="basement.dll" dest="MainApp:\" type="bin" operation="add" md5="F4CB5451012B68312A959EC976EB8374"/>
+			<File name="bugreport.exe" dest="MainApp:\" type="bin" operation="add" md5="8C9F4E84222C69F46BDAEA0994A981A5"/>
+			<File name="bull120u.dll" dest="MainApp:\" type="bin" operation="add" md5="ECEC3F02938560544EA8699B2BA0B814"/>
+			<File name="channelpcsdk.dll" dest="MainApp:\" type="bin" operation="add" md5="EBDF61661B0BB91B44704E44B8921529"/>
+			<File name="config.ini" dest="MainApp:\" type="resource" operation="add" md5="E5AAA73D32A0309EA73FF8AAD6C296F9"/>
+			<File name="crossdomain.dat" dest="MainApp:\" type="resource" operation="add" md5="A2BDBC6A04BE76CEB7AB694D55AFBD2A"/>
+			<File name="duiengine license.txt" dest="MainApp:\" type="resource" operation="add" md5="EC1F61829F3E9852C9019A48D8158F1D"/>
+			<File name="exiv2.dll" dest="MainApp:\" type="bin" operation="add" md5="8BA9908F31BE3EC9C5E0027C4ED9823A"/>
+			<File name="guanjia_logo.ico" dest="MainApp:\" type="resource" operation="add" md5="149C33BEC92465A5D62109FEFEE817AB"/>
+			<File name="helputility.exe" dest="MainApp:\" type="bin" operation="add" md5="60ED8743441D5A7D4E9780F7775E06DC"/>
+			<File name="kernel.dll" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="47BF959BF5A04DDD8D17C99F73E644CB"/>
+			<File name="kernelbasis.dll" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="FC5236270391507BBE6C2DA6D26878E4"/>
+			<File name="kernelpromote.dll" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="4A8E03A342055CC0BEA514BA04A05BCB"/>
+			<File name="kernelupdate.exe" dest="MainApp:\" type="bin" operation="add" condition="-cv " md5="9568923B3CA26902D48B30D03A27C666"/>
+			<File name="libexpat.dll" dest="MainApp:\" type="bin" operation="add" md5="8B429DB6672C9CC3D243F56519255BF3"/>
+			<File name="msvcp120.dll" dest="MainApp:\" type="bin" operation="add" md5="FD5CABBE52272BD76007B68186EBAF00"/>
+			<File name="msvcr120.dll" dest="MainApp:\" type="bin" operation="add" md5="034CCADC1C073E4216E9466B720F9849"/>
+			<File name="npyunwebdetect.dll" dest="MainApp:\" type="bin" operation="add" md5="D7609F1259569585E4A8385F6A9FAAF2"/>
+			<File name="resource.db" dest="MainApp:\" type="resource" operation="add" md5="58B89FCF7C90A260C5EE318CC20571B3"/>
+			<File name="serviceassistans.exe" dest="MainApp:\" type="bin" operation="add" md5="7DB93B6C30E036BB8D078471286F033A"/>
+			<File name="skin\default.db" dest="MainApp:\skin\" type="resource" operation="add" md5="89714CB7AD1076E8C13A7C82BF525503"/>
+			<File name="skin\duiengineskin.zip" dest="MainApp:\skin\" type="resource" operation="add" md5="0E0F7F66FAC764590115252C0B0A386A"/>
+			<File name="sounds\1.wav" dest="MainApp:\sounds\" type="resource" operation="add" md5="583F4E6B4BB00DD4B9DFAF7338F6F414"/>
+			<File name="sounds\2.wav" dest="MainApp:\sounds\" type="resource" operation="add" md5="4408F456A35C301EE1B951E20FFA71BB"/>
+			<File name="sounds\3.wav" dest="MainApp:\sounds\" type="resource" operation="add" md5="9CA4AEC9EF66806361F3E0AE86792C86"/>
+			<File name="sounds\4.wav" dest="MainApp:\sounds\" type="resource" operation="add" md5="0616BA6AA33FCC59C46F7EDAEA9B3E9E"/>
+			<File name="uninst.exe" dest="MainApp:\" type="bin" operation="add" md5="EA56D958D7B2A25CD7D0FD86BE170823"/>
+			<File name="versioninfo" dest="MainApp:\" type="resource" operation="add" md5="7905795F208565DCC5C198B5BB7569B3"/>
+			<File name="versioninfo2" dest="MainApp:\" type="resource" operation="add" md5="D4289482B58EFFE510AF2816B82CCFCB"/>
+			<File name="ximage.dll" dest="MainApp:\" type="bin" operation="add" md5="A5E649D68CCDA54C2F3C385B5B696EFE"/>
+			<File name="yundb.dll" dest="MainApp:\" type="bin" operation="add" md5="A537B781C80576A231C31269A7134D12"/>
+			<File name="yundetectservice.exe" dest="MainApp:\" type="bin" operation="add" md5="8B772F9BF99D6B235821FA8A11447915"/>
+			<File name="yunlogic.dll" dest="MainApp:\" type="bin" operation="add" md5="5EC5828EA51537D8C98E00A9008CBE2E"/>
+			<File name="yunshellext.dll" dest="MainApp:\" type="bin" operation="add" md5="71B0BB455D514A866380381F5621057A"/>
+			<File name="yunshellext64.dll" dest="MainApp:\" type="bin" operation="add" md5="86871FE103C69DCBE5C4357AC6BB9D08"/>
+			<File name="yuntorrentfile.ico" dest="MainApp:\" type="resource" operation="add" md5="F48684B4A5A59774728F26136AB83963"/>
+			<File name="yunutilityservice.exe" dest="MainApp:\" type="bin" operation="add" md5="BDA6C3585D5CA03A5623A920D80A8C41"/>
+			<File name="yundetectservice.exe" dest="MainApp:\" type="restart" operation="exe"/>
+		</FullPackage>
+	</Module>
+</AutoUpdate>
